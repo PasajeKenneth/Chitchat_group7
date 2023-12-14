@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "719838691824",
+    "project_id": "chatmes-99bb2",
+    "storage_bucket": "chatmes-99bb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719838691824:android:a4c4f71bf85bcdb6995d35",
+        "android_client_info": {
+          "package_name": "com.example.chatmessenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIo1Qs2yVKK_PfPiwk5-2zquEX_ivoVLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

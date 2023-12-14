@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            tools:context=".CreateUserActivity">
+
+            <!-- CardView for Sign-Up -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="#B9FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Title Text -->
+                    <TextView
+                        android:id="@+id/titleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/nunito"
+                        android:textColor="@color/black"
+                        android:text="SignUp"
+                        android:textStyle="bold"
+                        android:textSize="30sp" />
+
+                    <!-- Name Input -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        app:boxBackgroundColor="@android:color/transparent">
+
+                        <EditText
+                            android:id="@+id/signUpEtName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Enter name"
+                            android:importantForAutofill="no"
+                            android:inputType="textCapWords"
+                            android:maxLength="25"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="0dp"
+                            tools:background="@android:color/transparent" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Email Input -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:padding="0dp"
+                        app:boxBackgroundColor="@android:color/transparent">
+
+                        <EditText
+                            android:id="@+id/signUpEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Email"
+                            android:importantForAutofill="no"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="25"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="0dp"
+                            tools:background="@android:color/transparent" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Password Input -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:padding="0dp"
+                        app:boxBackgroundColor="@android:color/transparent">
+
+                        <EditText
+                            android:id="@+id/signUpPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Enter password"
+                            android:importantForAutofill="no"
+                            android:inputType="textPassword"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="0dp"
+                            tools:background="@android:color/transparent" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Sign-Up Button -->
+                    <Button
+                        android:id="@+id/signUpBtn"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:text="Sign Up"
+                        android:textSize="16sp"
+                        app:cornerRadius="30dp"/>
+
+                    <!-- Text to Sign-In -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/signUpTextToSignIn"
+                        android:layout_height="wrap_content"
+                        android:text="Already got an account? Login"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>
